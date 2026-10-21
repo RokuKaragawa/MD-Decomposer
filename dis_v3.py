@@ -64,7 +64,7 @@ def calculate_std(values):
 
 def find_min_std_decompositions(t, max_solutions=1000):
     blocks = generate_blocks(t)
-    # 按值升序排列，便于DP遍历（顺序无关）
+    # 按值升序排列，便于DP遍历
     blocks_sorted = sorted(blocks, key=lambda x: x[0])
     n = len(blocks)
     # dp: (sum, count) -> min_sq
@@ -111,7 +111,7 @@ def find_min_std_decompositions(t, max_solutions=1000):
         val = blocks_sorted[idx][0]
         solution.append(blocks_sorted[idx])  # (val, s, r)
         cur_key = (prev_sum, prev_count)
-    # 恢复降序（与原代码一致）
+    # 恢复降序
     solution.sort(key=lambda x: x[0], reverse=True)
     return best_std, [solution]
 
@@ -159,7 +159,7 @@ def format_solution(t, solution):
     return f"{t} = " + " + ".join(map(str, values))
 
 def main():
-    # 单次输入，计算后退出（不再循环）
+    # 单次输入，计算后退出
     user_input = input("请输入预分解的数字：").strip()
     try:
         t = int(user_input)
@@ -167,7 +167,7 @@ def main():
         print("请输入有效的整数。")
         return
 
-    # 1) 最优分解（最大化最小项）
+    # 1) 最优分解
     optimal_solutions = find_optimal_decompositions(t)
     if not optimal_solutions:
         print("无解")
@@ -180,7 +180,7 @@ def main():
 
     print()  # 空行分隔
 
-    # 2) 项数最少分解（无条件输出，并从中选出最小值最大的）
+    # 2) 项数最少分解
     best_count, count_solutions = find_min_count_decompositions(t)
     if count_solutions:
         # 从所有最少项数解中，挑选最小值最大的那一个
