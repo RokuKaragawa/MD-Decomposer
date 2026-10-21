@@ -1,0 +1,77 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="E302" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="nk.Scene" />
+          <option value="Test1.*" />
+          <option value="numpy" />
+          <option value="Test2.Scene" />
+          <option value="Test2.*" />
+          <option value="nk.manim" />
+          <option value="nk.Text" />
+          <option value="nk.Write" />
+          <option value="nk.MathTex" />
+          <option value="nk.DrawBorderThenFill" />
+          <option value="nk.VGroup" />
+          <option value="nk.FadeOut" />
+          <option value="nk.ApplyMethod" />
+          <option value="nk.FadeIn" />
+          <option value="nk.UL" />
+          <option value="nk.DOWN" />
+          <option value="nk.UR" />
+          <option value="nk.RIGHT" />
+          <option value="nk.LEFT" />
+          <option value="nk.Uncreate" />
+          <option value="pi.Scene" />
+          <option value="pi.manim" />
+          <option value="pi.Tex" />
+          <option value="R.Scene" />
+          <option value="r.Scene" />
+          <option value="r.manim" />
+          <option value="r.Text" />
+          <option value="r.Write" />
+          <option value="r.MathTex" />
+          <option value="r.FadeOut" />
+          <option value="r.VGroup" />
+          <option value="r.DrawBorderThenFill" />
+          <option value="r.Uncreate" />
+          <option value="r.Tex" />
+          <option value="r.ApplyMethod" />
+          <option value="r.DOWN" />
+          <option value="r.DR" />
+          <option value="r.UL" />
+          <option value="r.Transform" />
+          <option value="r.ReplacementTransform" />
+          <option value="r.LEFT" />
+          <option value="lib.manim" />
+          <option value="lib.Scene" />
+          <option value="lib.Text" />
+          <option value="lib.Write" />
+          <option value="lib.FadeOut" />
+          <option value="lib.VGroup" />
+          <option value="lib.DrawBorderThenFill" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
